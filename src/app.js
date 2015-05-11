@@ -1,10 +1,19 @@
+var texts = ( function() {
+  var lang = tabris.device.get( "language" ).replace( /-.*/, "" );
+  try {
+    return require( "./" + lang + ".json" );
+  } catch( ex ) {
+    return require( "./en.json" );
+  }
+}() );
+
 var page = tabris.create( "Page", {
-  title : "Mark Calculator",
+  id : "page",
   topLevel : true
 } );
 
 var actualPointsLabel = tabris.create( "TextView", {
-  text: "Actual Points",
+  id: "actualPointsLabel",
   layoutData : {
     top: "10%",
     left: "10%"
@@ -21,7 +30,7 @@ var actualPointsInput = tabris.create( "TextInput", {
 } ).appendTo( page );
 
 var clearActualPointsButton = tabris.create( "Button", {
-  text : "Clear",
+  id: "clearActualPointsButton",
   layoutData : {
     baseline: actualPointsInput,
     left: [ actualPointsInput, 20 ],
@@ -29,7 +38,7 @@ var clearActualPointsButton = tabris.create( "Button", {
 } ).appendTo( page );
 
 var totalPointsLabel = tabris.create( "TextView", {
-  text: "Total Points",
+  id: "totalPointsLabel",
   layoutData : {
     top: [ actualPointsLabel, 20 ],
     left: "10%"
@@ -46,7 +55,7 @@ var totalPointsInput = tabris.create( "TextInput", {
 } ).appendTo( page );
 
 var resultingMarkLabel = tabris.create( "TextView", {
-  text: "Resulting Mark",
+  id: "resultingMarkLabel",
   layoutData : {
     top: [ totalPointsLabel, 60 ],
     left: "10%"
@@ -67,7 +76,7 @@ var updateResultingMark = function() {
   if( !isNaN( actualPoints ) && !isNaN( totalPoints ) ) {
     var resultingMark = 6 - ( actualPoints / totalPoints * 5 );
     if( resultingMark >= 1 && resultingMark <= 6 ) {
-    text = resultingMark.toFixed( 1 );
+      text = resultingMark.toFixed( 1 );
     }
   }
   resultingMarkView.set( "text", text );
@@ -82,6 +91,7 @@ saveSettings = function() {
   localStorage.setItem( "markCalculator.actualPoints", actualPointsInput.get( "text" ) );
   localStorage.setItem( "markCalculator.totalPoints", totalPointsInput.get( "text" ) );
 }
+
 restoreSettings = function() {
   var actualPoints = localStorage.getItem( "markCalculator.actualPoints" );
   if( actualPoints != null ) {
@@ -96,8 +106,8 @@ restoreSettings = function() {
 
 actualPointsInput.on( "input", updateResultingMark );
 totalPointsInput.on( "input", updateResultingMark );
-clearActualPointsButton.on( "select", clearActualPoints() );
+clearActualPointsButton.on( "select", clearActualPoints );
 tabris.app.on( "pause", saveSettings );
 tabris.app.on( "resume", restoreSettings );
 
-page.open();
+page.apply( texts ).open();

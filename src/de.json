@@ -1,0 +1,17 @@
+{
+  "#page": {
+    "title": "Notenrechner"
+  },
+  "#actualPointsLabel": {
+    "text": "Tatsächliche Punktzahl"
+  },
+  "#clearActualPointsButton": {
+    "text": "Löschen"
+  },
+  "#totalPointsLabel": {
+    "text": "Gesamtpunktzahl"
+  },
+  "#resultingMarkLabel": {
+    "text": "Note"
+  }
+}

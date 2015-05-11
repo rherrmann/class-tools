@@ -1,0 +1,17 @@
+{
+  "#page": {
+    "title": "Mark Calculator"
+  },
+  "#actualPointsLabel": {
+    "text": "Actual Points"
+  },
+  "#clearActualPointsButton": {
+    "text": "Clear"
+  },
+  "#totalPointsLabel": {
+    "text": "Total Points"
+  },
+  "#resultingMarkLabel": {
+    "text": "Resulting Mark"
+  }
+}
