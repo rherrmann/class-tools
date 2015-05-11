@@ -3,10 +3,7 @@
     "title": "Notenrechner"
   },
   "#actualPointsLabel": {
-    "text": "Tatsächliche Punktzahl"
-  },
-  "#clearActualPointsButton": {
-    "text": "Löschen"
+    "text": "Erreichte Punktzahl"
   },
   "#totalPointsLabel": {
     "text": "Gesamtpunktzahl"

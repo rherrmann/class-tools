@@ -5,9 +5,6 @@
   "#actualPointsLabel": {
     "text": "Actual Points"
   },
-  "#clearActualPointsButton": {
-    "text": "Clear"
-  },
   "#totalPointsLabel": {
     "text": "Total Points"
   },
