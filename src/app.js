@@ -30,7 +30,6 @@ var actualPointsInput = tabris.create( "TextInput", {
 } ).appendTo( page );
 
 var clearActualPointsButton = tabris.create( "Button", {
-  id: "clearActualPointsButton",
   image: "src/clear.png",
   layoutData : {
     baseline: actualPointsInput,
