@@ -1,0 +1,8 @@
+{
+  "name": "mark-calculator",
+  "description": "Mark Calculator",
+  "main": "app.js",
+  "dependencies": {
+    "tabris": "1.0.0"
+  }
+}
