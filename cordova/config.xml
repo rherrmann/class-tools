@@ -2,9 +2,15 @@
 <widget id="com.codeaffine.mark.calculator" version="1.0.0">
   <name>Mark Calculator</name>
   <description>
-   A simple tool to convert from given actual/total number of points to a mark.
+    A simple tool to convert from given actual/total number of points to a mark.
   </description>
   <author email="rherrmann@codeaffine.com" href="https://tabrisjs.com">
-   Rüdiger Herrmann
+    Rüdiger Herrmann
   </author>
+  <icon src="logo@32.png" />
+  <icon src="logo@16.png" density="mdpi" />
+  <icon src="logo@24.png" density="hdpi" />
+  <icon src="logo@32.png" density="xhdpi" />
+  <icon src="logo@64.png" density="xxhdpi" />
+  <icon src="logo@128.png" density="xxxhdpi" />
 </widget>
