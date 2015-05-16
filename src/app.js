@@ -85,12 +85,17 @@ var updateResultingMark = function() {
 clearActualPoints = function() {
   actualPointsInput.set( "text", "" );
   updateResultingMark();
-}
+};
 
 saveSettings = function() {
-  localStorage.setItem( "markCalculator.actualPoints", actualPointsInput.get( "text" ) );
-  localStorage.setItem( "markCalculator.totalPoints", totalPointsInput.get( "text" ) );
-}
+  // [rh] workaround for https://github.com/eclipsesource/tabris-js/issues/445
+  if( actualPointsInput.get( "text" ) ) {
+    localStorage.setItem( "markCalculator.actualPoints", actualPointsInput.get( "text" ) );
+  }
+  if( totalPointsInput.get( "text" ) ) {
+    localStorage.setItem( "markCalculator.totalPoints", totalPointsInput.get( "text" ) );
+  }
+};
 
 restoreSettings = function() {
   var actualPoints = localStorage.getItem( "markCalculator.actualPoints" );
@@ -102,7 +107,7 @@ restoreSettings = function() {
     actualPointsInput.set( "text", totalPoints );
   }
   updateResultingMark();
-}
+};
 
 actualPointsInput.on( "input", updateResultingMark );
 totalPointsInput.on( "input", updateResultingMark );
