@@ -1,8 +1,16 @@
 {
   "name": "mark-calculator",
   "description": "Mark Calculator",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/rherrmann/class-tools.git"
+  },
+  "bugs": { 
+    "url" : "https://github.com/rherrmann/class-tools/issues"
+  },
+  "license": "MIT",
   "main": "src/app.js",
   "dependencies": {
-    "tabris": "1.0.0"
+    "tabris": "^1.6.0"
   }
 }
