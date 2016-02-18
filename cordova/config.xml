@@ -14,12 +14,20 @@
   <author email="rherrmann@codeaffine.com" href="https://github.com/rherrmann/class-tools">
     Rüdiger Herrmann
   </author>
-  <platform>
+  <platform name="ios">
+	  <icon src="logo@32.png" width="32" height="32" />
+	  <icon src="logo@16.png" width="16" height="16" density="mdpi" />
+	  <icon src="logo@24.png" width="24" height="24" density="hdpi" />
+	  <icon src="logo@32.png" width="32" height="32" density="xhdpi" />
+	  <icon src="logo@64.png" width="64" height="64" density="xxhdpi" />
+	  <icon src="logo@128.png" width="128" height="128" density="xxxhdpi" />
   </platform>
-  <icon src="logo@32.png" width="32" height="32" />
-  <icon src="logo@16.png" width="16" height="16" density="mdpi" />
-  <icon src="logo@24.png" width="24" height="24" density="hdpi" />
-  <icon src="logo@32.png" width="32" height="32" density="xhdpi" />
-  <icon src="logo@64.png" width="64" height="64" density="xxhdpi" />
-  <icon src="logo@128.png" width="128" height="128" density="xxxhdpi" />
+  <platform name="android">
+	  <icon src="logo@32.png" width="32" height="32" />
+	  <icon src="logo@16.png" width="16" height="16" density="mdpi" />
+	  <icon src="logo@24.png" width="24" height="24" density="hdpi" />
+	  <icon src="logo@32.png" width="32" height="32" density="xhdpi" />
+	  <icon src="logo@64.png" width="64" height="64" density="xxhdpi" />
+	  <icon src="logo@128.png" width="128" height="128" density="xxxhdpi" />
+  </platform>
 </widget>
