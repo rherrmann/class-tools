@@ -1,16 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.codeaffine.mark.calculator" version="1.0.0">
+<widget 
+  id="com.codeaffine.mark.calculator" 
+  version="1.0.0"
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:cdv="http://cordova.apache.org/ns/1.0"
+  android-packageName="com.codeaffine.classtools"
+  ios-CFBundleIdentifier="com.codeaffine.classtools">
+
   <name>Mark Calculator</name>
   <description>
     A simple tool to convert from given actual/total number of points to a mark.
   </description>
-  <author email="rherrmann@codeaffine.com" href="https://tabrisjs.com">
+  <author email="rherrmann@codeaffine.com" href="https://github.com/rherrmann/class-tools">
     Rüdiger Herrmann
   </author>
-  <icon src="logo@32.png" />
-  <icon src="logo@16.png" density="mdpi" />
-  <icon src="logo@24.png" density="hdpi" />
-  <icon src="logo@32.png" density="xhdpi" />
-  <icon src="logo@64.png" density="xxhdpi" />
-  <icon src="logo@128.png" density="xxxhdpi" />
+  <platform>
+  </platform>
+  <icon src="logo@32.png" width="32" height="32" />
+  <icon src="logo@16.png" width="16" height="16" density="mdpi" />
+  <icon src="logo@24.png" width="24" height="24" density="hdpi" />
+  <icon src="logo@32.png" width="32" height="32" density="xhdpi" />
+  <icon src="logo@64.png" width="64" height="64" density="xxhdpi" />
+  <icon src="logo@128.png" width="128" height="128" density="xxxhdpi" />
 </widget>
