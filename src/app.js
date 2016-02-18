@@ -104,7 +104,7 @@ restoreSettings = function() {
   }
   var totalPoints = localStorage.getItem( "markCalculator.totalPoints" );
   if( totalPoints != null ) {
-    actualPointsInput.set( "text", totalPoints );
+    totalPointsInput.set( "text", totalPoints );
   }
   updateResultingMark();
 };
