@@ -1,7 +1,11 @@
 # Mark Calculator
 
-A simple tool to convert from given actual/total number of points to a mark. 
+A simple tool to convert from a given actual and total number of points to a mark.
 
+Currently there is a single formula used to compute the mark.
+```
+mark = 6 - ( actualPoints / totalPoints * 5 )
+```
 
 Icons made by [Freepik](http://www.freepik.com) 
 from [www.flaticon.com](http://www.flaticon.com)
